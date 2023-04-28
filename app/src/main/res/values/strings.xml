@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Анонимные знакомства онлайн</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <!--<string name="fr_01_description" >-->
+    <!--Быстрая регистрация\n-->
+    <!--Без подключения социальных сетей\n-->
+    <!--Свыше 100 тысяч пользователей\n-->
+    <!--Полная анонимность\n-->
+    <!--</string>-->
+
+
+    <string name="age_default_message">Please enter your age</string>
+    <string name="age_message">Your age is %1$d</string>
+    <string name="adult_button_text">I am 18 or older</string>
+    <string name="under18_button_text">I am under 18</string>
+
+    <string name="license_text">Здесь должен быть текст лицензионного соглашения.</string>
+    <string name="accept_button_text">Принять</string>
+    <string name="reject_button_text">Отклонить</string>
+
+
+    <string name="fr_01_description">
+        Регистрация без смс\n\n
+        Более 200 тысяч\n
+        пользователей\n\n
+        100% анонимность\n\n
+        Только реальные девушки
+    </string>
+
+
+    <string name="fr_02_description">
+        1) Пункт №1\n\tПравило №1\n2) Пункт №2\n\tПравило №2\n3) Null…\n4) Null\n5) Пункт №5\n\tПравило №5\n
+    </string>
+    <string name="first_btn_next">ДАЛЕЕ</string>
+
+
+    <string name="metrika_api_key" translatable="false">b24f69a6-3d52-47b4-aa11-9e46e2b1fa31</string>
+    <string name="agreement">Нажимая кнопку \"Начать\", вы подтверждаете свое согласие с правилами</string>
+    <string name="license_agreement">Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</string>
+    <string name="license_link_text">* kkkkkk</string>
+    <string name="license_activity_title">Лицензионное соглашение</string>
+
+
+    <string name="fragment_main_title">Главный экран</string>
+    <string name="button_login">Войти</string>
+    <string name="button_match_center">МАТЧ ЦЕНТР</string>
+
+</resources>

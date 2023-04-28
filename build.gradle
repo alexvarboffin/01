@@ -1,0 +1,41 @@
+ext{
+    minSdkVersion = 21
+    targetSdkVersion = 33
+
+    compatVersion = "1.6.1"
+    materialVersion = "1.8.0"
+    lifecycle_version = "2.6.1"
+
+    crashlyticsVersion = "18.3.6"
+    analyticsVersion = "21.2.2"
+}
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        mavenCentral()
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+            metadataSources {
+                mavenPom()
+                artifact()
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

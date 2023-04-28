@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.android.rss.core.ScrollViewHelper
+        android:id="@+id/scrollViewHelper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.android.rss.core.ResizableImageViewCrop
+                android:id="@+id/iv_news_full_img"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:minHeight="?attr/actionBarSize"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_news_full_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/tv_news_full_title"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/cardview_dark_background" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <WebView
+                android:id="@+id/wv_news_full_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp" />
+        </LinearLayout>
+    </com.android.rss.core.ScrollViewHelper>
+
+    <include layout="@layout/inc_toolbar" />
+</FrameLayout>

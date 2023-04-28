@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/license_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/license_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/license_agreement"
+        android:textSize="18sp"
+        android:background="@drawable/license_border"
+        android:padding="16dp"
+        android:lineSpacingExtra="8dp"/>
+
+    <TextView
+        android:id="@+id/license_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/license_link_text"
+        android:textColor="@color/link_color"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accept_button_text"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/decline_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reject_button_text"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"/>
+
+</LinearLayout>

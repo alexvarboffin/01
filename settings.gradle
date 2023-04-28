@@ -1,0 +1,9 @@
+include ':app'
+
+include ':core'
+project(':core').projectDir = new File('D:\\walhalla\\gambling\\kwk_flappy\\corelib\\')
+
+
+include ':ui'
+project(':ui').projectDir = new File('D:\\walhalla\\sdk\\android\\ui\\ui\\')
+include ':sportlib'

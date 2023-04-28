@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:id="@+id/pub_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dip"
+        android:textColor="#b70400"
+        android:textSize="14dip"
+        tools:text="00:00:00"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/tv_image"
+        android:layout_toStartOf="@+id/tv_image"
+        android:layout_below="@+id/pub_date">
+
+
+        <!-- Article title -->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dip"
+            android:textColor="#303030"
+            android:textSize="18dip"
+            android:textStyle="bold"
+            tools:text="Data Science 101" />
+
+        <!-- published date -->
+
+        <!-- article description -->
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pub_date"
+            android:paddingBottom="6dip"
+            android:textColor="#8d8d8d"
+            android:textSize="15dip"
+            tools:text="Description Description Description \n Description Description Description \n
+Description Description Description\n Description Description Description
+" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tv_image"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher" />
+
+
+</RelativeLayout>

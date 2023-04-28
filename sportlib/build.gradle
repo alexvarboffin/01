@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.walhalla.sportlib'
+    compileSdk 33
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:$rootProject.compatVersion"
+    implementation "com.google.android.material:material:$rootProject.materialVersion"
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation "androidx.browser:browser:1.5.0"
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'com.google.firebase:firebase-analytics:21.2.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'com.my.tracker:mytracker-sdk:3.0.+'
+
+    implementation project(':ui')
+    implementation project(':core')
+}

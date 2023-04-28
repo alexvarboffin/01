@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_terms">Условия пользования</string>
+    <string name="policy_text" translatable="false">uuuuuuuuuuuuuuuuuuuu%1$s %2$s</string>
+    <string name="security_text_full">jjj %1$s</string>
+    <string name="action_no">No</string>
+    <string name="action_continue">Continue</string>
+    <string name="url_privacy_policy">iii</string>
+    <string name="aa11">lll</string>
+    <string name="a_terms2">8888</string>
+    <string name="aa22">9999</string>
+    <string name="err_connection">oooo</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_color_1">#16BA78</color>
+    <color name="btn_color_2">#16BA78</color>
+
+    <color name="btn_color_2_c3">#FFCA05</color>
+    <color name="btn_color_1_c3">#FFE938</color>
+
+
+    <color name="icon_tint_1">#34E7B7</color>
+    <color name="icon_tint_2">#00D7FF</color>
+    <color name="color_4">#69F436</color>
+
+    <color name="Separator.Color">#ffe7e7e7</color>
+</resources>
